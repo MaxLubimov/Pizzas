@@ -1,0 +1,40 @@
+.root {
+  position: relative;
+  width: 70%;
+  max-width: 450px;
+}
+
+.input {
+  width: 100%;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 12px 20px;
+  padding-left: 45px;
+  border-radius: 10px;
+  font-size: 16px;
+  &:focus {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+}
+
+.searchIcon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 15px;
+  top: 11px;
+  opacity: 0.5;
+}
+
+.clearIcon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 15px;
+  top: 11px;
+  opacity: 0.5;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}

@@ -15,9 +15,9 @@ function App() {
       <Header />
       <div className="content">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/Pizzas/" element={<Home />} />
           <Route
-            path="/cart"
+            path="/Pizzas/cart"
             element={
               <Suspense fallback={<div>Идёт загрузка...</div>}>
                 <Cart />
@@ -25,7 +25,7 @@ function App() {
             }
           />
           <Route
-            path="/pizza/:id"
+            path="/Pizzas/pizza/:id"
             element={
               <Suspense fallback={<div>Идёт загрузка...</div>}>
                 <FullPizza />
@@ -33,7 +33,7 @@ function App() {
             }
           />
           <Route
-            path="*"
+            path="/Pizzas/*"
             element={
               <Suspense fallback={<div>Идёт загрузка...</div>}>
                 <NotFound />
